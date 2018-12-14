@@ -42,6 +42,13 @@ $(document).ready(function() {
     }
   });
 
+  $('.interactButton').on('click', function() {
+    var random1 = Math.floor(Math.random() * (window.dancers.length - 1)) + 1;
+    var random2 = Math.floor(Math.random() * (window.dancers.length - 1)) + 1;
+    window.dancers[random1].setPosition(350,550);
+    window.dancers[random2].setPosition(350,600);
+  });
+
 //click dancer function
   // $('.dancer').on('mouseover', function(event) {
   //   alert('hello!');
