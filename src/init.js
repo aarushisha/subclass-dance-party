@@ -28,6 +28,29 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
   });
+
+//added lineup button click action
+  $('.lineUpButton').on('click', function() {
+    var top = 400;
+    var left = 0;
+    for (var i  = 0; i < window.dancers.length; i++) {
+      //use call or bind? maybe call?
+      window.dancers[i].setPosition(top, left);
+      left += 50;
+    }
+  });
+
+//click dancer function
+  // $('.dancer').on('mouseover', function(event) {
+  //   alert('hello!');
+  // });
+
+  // $( ".dancer" ).hover(function() {
+  //   $( this ).fadeOut( 100 );
+  //   $( this ).fadeIn( 500 );
+  // });
+
 });
 
