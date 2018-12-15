@@ -17,6 +17,10 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
+.title, .interactButton{
+  padding:5px 12px;
+  float:right;
+}
 .topbar{
   height:32px;
   background-color: #555;
@@ -25,24 +29,51 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  background-image: url("src/nerdyface.png");
+  background-size: 80px;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-position: right 60% bottom 55%;
+  border:2px solid yellow;
+  border-radius:100px;
   position:absolute;
+}
+
+.dancer:hover{
+  background-image: url("src/sunglasses.png");
+  background-size: 80px;
+  width: 65px;
+  height: 65px;
+  background-position: right 55% bottom 55%;
 }
 
 .mindBlownDancer{
   background-image: url("src/mindblown.png");
+  background-size: 80px;
+  width: 65px;
+  height: 65px;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  border:5px solid green;
-  border-radius:1px;
+  background-position: right 60% bottom 55%;
+  border:2px solid yellow;
+  border-radius:100px;
   position:absolute;
 }
 
+
+/* .mindBlownDancer:hover{
+  border: 500px;
+} */
+
 .heartEyesDancer{
-  border:10px solid red;
-  border-radius:10px;
+  background-image: url("src/hearteyes.png");
+  background-size: 80px;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-position: right 60% bottom 55%;
+  border:2px solid red;
+  border-radius:100px;
   position:absolute;
 }
 
