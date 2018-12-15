@@ -33,31 +33,32 @@ $(document).ready(function() {
 
 //added lineup button click action
   $('.lineUpButton').on('click', function() {
-    var top = 400;
+    var top = 50;
     var left = 0;
     for (var i  = 0; i < window.dancers.length; i++) {
-      //use call or bind? maybe call?
       window.dancers[i].setPosition(top, left);
-      left += 50;
+      left += 70;
     }
   });
 
   $('.interactButton').on('click', function() {
     var random1 = Math.floor(Math.random() * (window.dancers.length - 1)) + 1;
     var random2 = Math.floor(Math.random() * (window.dancers.length - 1)) + 1;
-    window.dancers[random1].setPosition(350,550);
-    window.dancers[random2].setPosition(350,600);
+    window.dancers[random1].setPosition(305,550);
+    window.dancers[random2].setPosition(305,620);
+    window.dancers[random1].rotate();
+    window.dancers[random2].rotate();
+    // window.dancers[random1].rotate();
+    // window.dancers[random2].rotate();
+    // alert('hi');
+  //   $(window.dancers[random1]).animate({  textIndent: 0 }, {
+  //     step: function(now,fx) {
+  //       $(window.dancers[random1]).css('-webkit-transform','rotate('+now+'deg)'); 
+  //     },
+  //     duration:'slow'
+  // },'linear');
   });
 
-//click dancer function
-  // $('.dancer').on('mouseover', function(event) {
-  //   alert('hello!');
-  // });
-
-  // $( ".dancer" ).hover(function() {
-  //   $( this ).fadeOut( 100 );
-  //   $( this ).fadeIn( 500 );
-  // });
 
 });
 

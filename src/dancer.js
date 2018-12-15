@@ -25,3 +25,10 @@ MakeDancer.prototype.setPosition = function(top, left) {
   this.$node.css(styleSettings);
 };
 
+MakeDancer.prototype.rotate = function() {
+  // this.$node.css(animateRotate(90));
+  this.$node.css("transform", "rotate(45deg)");
+  // this.$node.css("transform", "rotate(-45deg)");
+
+  // this.$node.css("transform", "rotate(360deg");
+}
